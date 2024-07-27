@@ -1,10 +1,11 @@
 "use client";
 import React from 'react'
 
-function ProgressBar() {
+function ProgressBar({rating}) {
+    
   return (
-    <div className="w-[250px] h-[20px] rounded-[10px] flex border-2">
-       <div className="h-full w-[50%] rounded-[10px] bg-white"></div>
+    <div className="w-[150px] h-[12px] rounded-[10px] mr-[2px]  border-2">
+       <div className={`h-full w-[${rating}%] rounded-[10px] bg-white`}></div>
     </div>
   )
 }
