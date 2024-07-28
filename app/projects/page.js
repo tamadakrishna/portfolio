@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Projects from '@/components/UI/Projects';
 
 function page() {
   return (
-    <div>Skills</div>
+    <Projects/>
   )
 }
 
