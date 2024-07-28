@@ -9,16 +9,27 @@ function Card({pos,data}) {
       {/* Card */}
       <div className="w-[400px] h-[180px] shrink-0 shadow-[0px_2px_5px_gray] rounded-[10px] bg-[#2F2D28]">
         <div className="w-full h-[20px]  flex items-center"> 
-         <span className="ml-[5px] text-[12px]">2022 - 2024</span>
+        <span className="material-symbols-outlined">today</span>
+         <span className="ml-[5px] text-[12px] ">{data?.year}</span>
         </div>
-        <div className="w-full h-[30px] flex items-center"> 
-          <span className="ml-[5px]"> B.Tech in Computer Science and Engineering </span>  
+        <div className="w-full h-[25px] flex items-center"> 
+          <span className="material-symbols-outlined">school</span>
+          <span className="ml-[5px]  w-full text-[12px] ">{data?.course}</span>  
         </div>
-        <div className="w-full h-[30px] flex items-center"> 
-          <span className="ml-[5px]">Narasaraopet, Guntur, Andhra Pradesh</span>  
+        <div className="w-full h-[25px] flex items-center"> 
+          <span className="material-symbols-outlined">location_city</span>
+          <span className="ml-[5px] text-[12px]">{data?.institute}</span>  
         </div>
-        <div className="w-full h-[100px] before:ml-[5px]">
-          <span className="">During my studies in Computer Engineering at Visakhapatnam. I interned with XYZ Tech, where I developed ski I graduated with a strong GPA, ready to pursue a career in technology. </span>  
+        <div className="w-full h-[20px] flex items-center"> 
+          <span className="material-symbols-outlined">location_on</span>
+          <span className="ml-[5px] text-[12px]">{data?.location}</span>  
+        </div>
+        <div className="w-full h-[85px] mt-[5px]">
+        <span className="material-symbols-outlined absolute ">interests</span>
+          <div className="text-[12.5px] w-full break-words h-full">
+            <span className='ml-[30px]'></span>
+            {data?.message}
+          </div>  
         </div>
       </div>
     </div>
