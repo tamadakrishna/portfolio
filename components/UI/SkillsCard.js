@@ -11,12 +11,12 @@ function SkillsCard({title, skills}) {
             <span className='text-[25px]'>{title}</span>
         </div>
         {/* Content */}
-        <div className="w-full max-h-[calc(100%_-_40px)] gap-2 flex flex-wrap justify-between ">
+        <div className="w-full max-h-[calc(100%_-_40px)] p-[8px] gap-2 flex flex-wrap justify-between ">
             {
                 skills?.map((info,index)=>{
                     return (
                         <div key={index} className="flex  h-[25px] items-center">
-                            <div className='w-[100px]'> <span className='ml-[5px]'>{info?.skill}</span> </div>
+                            <div className='w-[100px]'> <span className=''>{info?.skill}</span> </div>
                             <ProgressBar rating={info?.rating}/>
                         </div>
                     )
