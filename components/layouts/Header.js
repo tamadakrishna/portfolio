@@ -19,8 +19,8 @@ function Header() {
             <div className="ml-[50px] text-[20px] textShadow-[2px_2px_10px_grey] cursor-pointer" onClick={()=>{router.push('/certifications')}}>Certifications</div>
             <div className="ml-[50px] text-[20px] textShadow-[2px_2px_10px_grey] cursor-pointer" onClick={()=>{router.push('/experience')}}>Experience</div>
        </div>
-       <div className="w-[40%] h-full flex justify-end cursor-pointer" onClick={makeCall}>
-        <div className='w-[150px]  flex flex-col justify-center items-center'>
+       <div className="w-[40%] h-full flex justify-end" >
+        <div className='w-[150px] flex flex-col justify-center items-center cursor-pointer' onClick={makeCall}>
             <div className='text-[10px]'>Tamada Krishna</div>
             <div className='text-[10px]'>+91 9392446518</div>
         </div>
