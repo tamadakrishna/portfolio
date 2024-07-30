@@ -13,6 +13,7 @@ function page() {
       year:"Jan 2024",
       preview:"https://proecommerce.vercel.app/",
       code:"https://github.com/tamadakrishna/ECOM",
+      images:'/images/projects/ecom/ecom.png',
       sub:[
         {
           title:"Frontend:",

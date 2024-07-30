@@ -63,7 +63,7 @@ function Projects({project}) {
                         <div className="w-[calc(100%_-_50px)] h-[calc(100%_-_50px)] border-2 border-slate-200 rounded-[5px]  p-4  bg-white relative ">
                               <Image
                                   className=" "
-                                  src={'/images/projects/ecom/ecom.png'}
+                                  src={modalInfo?.images}
                                   alt="Product"
                                   fill={true}
                               />
