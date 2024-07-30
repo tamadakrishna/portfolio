@@ -60,7 +60,7 @@ function Projects({project}) {
                 </div>
                 <div className='w-full h-[calc(100%_-_30px)] flex '>
                   <div className='w-[50%] h-full flex justify-center items-center '>
-                        <div className="w-[calc(100%_-_50px)] h-[calc(100%_-_50px)]  rounded-[5px]  p-4  bg-white relative ">
+                        <div className="w-[calc(100%_-_50px)] h-[calc(100%_-_50px)] border-2 border-slate-200 rounded-[5px]  p-4  bg-white relative ">
                               <Image
                                   className=" "
                                   src={'/images/projects/ecom/ecom.png'}
