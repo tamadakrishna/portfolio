@@ -7,8 +7,8 @@ function Projects() {
   
   return (
     <div className="w-full h-full text-black  flex items-center justify-center overflow-scroll no-scrollbar ">
-      <div className={`h-[calc(100%_-_50px)] w-[calc(100%_-_50px)] ${modal ? "hidden" : "block"}`} onClick={()=>{setModal(val=>!val)}}>
-         <div className="w-[300px] h-[210px] shadow-[0px_2px_5px_gray] rounded-[10px] text-white text-[12px]  bg-[#2F2D28] cursor-pointer">
+      <div className={`h-[calc(100%_-_50px)] w-[calc(100%_-_50px)] ${modal ? "hidden" : "block"}` }>
+         <div className={`w-[300px] h-[210px] shadow-[0px_2px_5px_gray] rounded-[10px] text-white text-[12px]  bg-[#2F2D28] cursor-pointer ${modal ? "hidden" : "block"}`} onClick={()=>{setModal(val=>!val)}}>
             <div className='w-full h-[25px]  flex items-center'>
               <span className="material-symbols-outlined">today</span>
               <span>{"Time Line"}</span>
@@ -33,7 +33,6 @@ function Projects() {
         <div className='w-full h-[30px]  flex justify-end'> 
           <span className="material-symbols-outlined h-full w-[30px] text-red-500 cursor-pointer" onClick={()=>{setModal(val=>!val)}}>close</span>
         </div>
-
       </div>
     </div>
   )
